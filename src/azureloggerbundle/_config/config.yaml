@@ -1,11 +1,5 @@
 parameters:
   azureloggerbundle:
+    enabled: True
     appInsights:
-      instrumentationKey: ''
-
-services:
-  azureloggerbundle.appInsights.AppInsightsLogHandlerFactory:
-    arguments:
-      - '%azureloggerbundle.appInsights.instrumentationKey%'
-    tags:
-      - 'loghandler.factory'
+      instrumentationKey:
