@@ -6,17 +6,15 @@ from injecta.service.ServiceAlias import ServiceAlias
 from injecta.service.argument.PrimitiveArgument import PrimitiveArgument
 from pyfonybundles.Bundle import Bundle
 
-class AzureLoggerBundle(Bundle):
 
-    def modifyServices(self, services: List[Service], aliases: List[ServiceAlias], parameters: Box): # pylint: disable = unused-argument
+class AzureLoggerBundle(Bundle):
+    def modify_services(self, services: List[Service], aliases: List[ServiceAlias], parameters: Box):
         if parameters.azureloggerbundle.enabled:
             service = Service(
-                'azureloggerbundle.appInsights.AppInsightsLogHandlerFactory',
-                DType('azureloggerbundle.appInsights.AppInsightsLogHandlerFactory', 'AppInsightsLogHandlerFactory'),
-                [
-                    PrimitiveArgument('%azureloggerbundle.appInsights.instrumentationKey%')
-                ],
-                ['loghandler.factory']
+                "azureloggerbundle.app_insights.AppInsightsLogHandlerFactory",
+                DType("azureloggerbundle.app_insights.AppInsightsLogHandlerFactory", "AppInsightsLogHandlerFactory"),
+                [PrimitiveArgument("%azureloggerbundle.app_insights.instrumentation_key%")],
+                ["loghandler.factory"],
             )
 
             services.append(service)

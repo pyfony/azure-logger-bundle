@@ -1,4 +1,4 @@
-name: appInsights-logger-bundle
+name: app_insights-logger-bundle
 channels:
   - defaults
 dependencies:

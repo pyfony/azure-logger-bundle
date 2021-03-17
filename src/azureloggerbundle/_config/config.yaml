@@ -1,5 +1,5 @@
 parameters:
   azureloggerbundle:
     enabled: True
-    appInsights:
-      instrumentationKey:
+    app_insights:
+      instrumentation_key:
