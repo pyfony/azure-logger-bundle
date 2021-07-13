@@ -17,7 +17,7 @@ In your project's `src/[ROOT_MODULE]/_config/config.yaml`
 ```yaml
 parameters:
   azureloggerbundle:
-    enabled: true
+    enabled: True
     app_insights:
       instrumentation_key: xxxx-xxxx-xxxx-xxxx
 ```
