@@ -5,7 +5,7 @@ description = "Azure Logger bundle for the Pyfony framework"
 readme = "README.md"
 repository = "https://github.com/pyfony/azure-logger-bundle"
 
-license = "MIT"
+license = "Proprietary"
 
 authors = [
     "Jiri Koutny <jiri.koutny@datasentics.com>"
@@ -13,7 +13,7 @@ authors = [
 
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: Other/Proprietary License",
     "Operating System :: OS Independent",
 ]
 

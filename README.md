@@ -1,5 +1,7 @@
 # Azure Logger bundle for the Pyfony Framework
 
+**This package is distributed under the "DataSentics SW packages Terms of Use." See [license](https://raw.githubusercontent.com/pyfony/azure-logger-bundle/master/LICENSE)**
+
 ### Installation
 
 ```bash
